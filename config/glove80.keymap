@@ -112,12 +112,12 @@
         qwerty_layer {
             display-name = "QWERTY";
             bindings = <
-                &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
-                &kp GRAVE    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp BACKSLASH
-                &key_repeat    &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I    &kp O    &kp P    &kp MINUS
-                &caps_word    &hml LGUI A    &hml LALT S    &hml LCTRL D    &hml LSHFT F    &kp G    &kp H    &hmr RSHFT J    &hmr RCTRL K    &hmr RALT L    &hmr RGUI SEMI    &kp SQT
-                &sk LSHFT    &kp Z    &kp X    &kp C    &kp V    &kp B    &kp ESC    &kp UP_ARROW    &kp DOWN    &kp LEFT    &kp RIGHT    &lt 4 RET    &kp N    &kp M    &kp COMMA    &kp DOT    &kp FSLH    &sk RSHFT
-                &magic 6 0    &kp BSLH    &kp LS(N9)    &kp LS(N0)    &kp LALT    &lt 1 BSPC    &lt 2 DEL    &kp INSERT    &kp DOWN    &lt 5 TAB    &lt 3 SPACE    &kp RALT    &kp LBKT    &kp RBKT    &kp GRAVE    &magic 6 0
+&kp F1       &kp F2       &kp F3       &kp F4         &kp F5                                                                                                  &kp F6        &kp F7        &kp F8       &kp F9          &kp F10
+&kp GRAVE    &kp N1       &kp N2       &kp N3         &kp N4        &kp N5                                                                            &kp N6  &kp N7        &kp N8        &kp N9       &kp N0          &kp BACKSLASH
+&key_repeat  &kp Q        &kp W        &kp E          &kp R         &kp T                                                                             &kp Y   &kp U         &kp I         &kp O        &kp P           &kp MINUS
+&caps_word   &hml LGUI A  &hml LALT S  &hml LCTRL D   &hml LSHFT F  &kp G                                                                             &kp H   &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp SQT
+&sk LSHFT    &kp Z        &kp X        &kp C          &kp V         &kp B   &kp ESC     &kp UP_ARROW  &kp DOWN      &kp LEFT  &kp RIGHT  &lt 4 RET    &kp N   &kp M         &kp COMMA     &kp DOT      &kp FSLH        &sk RSHFT
+&magic 6 0   &kp HOME     &kp PAGE_UP  &kp PAGE_DOWN  &kp END               &lt 1 BSPC  &lt 2 DEL     &kp INSERT    &kp DOWN  &lt 5 TAB  &lt 3 SPACE          &kp RALT      &kp LBKT      &kp RBKT     &kp GRAVE       &magic 6 0
             >;
         };
 
@@ -126,37 +126,38 @@
 
             // Cmd shortcuts at left end, Ctrl shortcuts at right end of left-hand rows 3-5.
             // Shift+arrows directly above arrows on right-hand home row.
+
             bindings = <
-                &kp C_VOL_DN    &kp C_VOL_UP    &kp C_MUTE    &kp C_PLAY_PAUSE    &kp C_PREV    &kp C_NEXT    &kp PRINTSCREEN    &kp SLCK    &kp KP_NUM    &trans
-                &trans    &kp ESC    &kp INS    &kp LS(TAB)    &kp DEL    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &kp LG(X)    &kp RET    &kp SPACE    &kp TAB    &kp BSPC    &kp LC(X)    &trans    &kp LS(LEFT)    &kp LS(UP)    &kp LS(DOWN)    &kp LS(RIGHT)    &trans
-                &kp LG(C)    &kp LGUI    &kp LALT    &kp LCTRL    &kp LSHFT    &kp LC(C)    &trans    &kp LEFT    &kp UP    &kp DOWN    &kp RIGHT    &trans
-                &kp LG(V)    &kp HOME    &kp PG_UP    &kp PG_DN    &kp END    &kp LC(V)    &trans    &trans    &trans    &trans    &trans    &trans    &kp BSPC    &kp HOME    &kp PG_UP    &kp PG_DN    &kp END    &trans
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp C_PLAY_PAUSE  &kp C_PREV                                                                         &kp C_NEXT    &kp PRINTSCREEN  &kp SLCK      &kp KP_NUM     &trans
+&trans        &kp ESC       &kp INS     &kp LS(TAB)       &kp DEL     &trans                                                       &trans    &trans        &trans           &trans        &trans         &trans
+&kp LG(X)     &kp RET       &kp SPACE   &kp TAB           &kp BSPC    &kp LC(X)                                                    &trans    &kp LS(LEFT)  &kp LS(UP)       &kp LS(DOWN)  &kp LS(RIGHT)  &trans
+&kp LG(C)     &kp LGUI      &kp LALT    &kp LCTRL         &kp LSHFT   &kp LC(C)                                                    &trans    &kp LEFT      &kp UP           &kp DOWN      &kp RIGHT      &trans
+&kp LG(V)     &kp HOME      &kp PG_UP   &kp PG_DN         &kp END     &kp LC(V)  &trans  &trans  &trans    &trans  &trans  &trans  &kp BSPC  &kp HOME      &kp PG_UP        &kp PG_DN     &kp END        &trans
+&trans        &trans        &trans      &trans            &trans                 &trans  &trans  &trans    &trans  &trans  &trans            &trans        &trans           &trans        &trans         &trans
             >;
         };
 
         number_layer {
             display-name = "Number";
             bindings = <
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &trans    &trans    &trans    &trans    &trans    &trans    &kp CARET    &trans    &trans    &trans    &kp PERCENT    &trans
-                &trans    &trans    &trans    &trans    &trans    &trans    &kp PLUS    &kp N7    &kp N8    &kp N9    &kp COLON    &trans
-                &trans    &kp LGUI    &kp LALT    &kp LCTRL    &kp LSHFT    &trans    &kp ASTERISK    &kp N4    &kp N5    &kp N6    &kp MINUS    &trans
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp COMMA    &kp SLASH    &kp N1    &kp N2    &kp N3    &trans    &trans
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp DOT    &kp N0    &kp EQUAL    &trans    &trans    &trans    &trans
+&trans  &trans    &trans    &trans     &trans                                                                                 &trans     &trans  &trans  &trans       &trans
+&trans  &trans    &trans    &trans     &trans     &trans                                                        &kp CARET     &trans     &trans  &trans  &kp PERCENT  &trans
+&trans  &trans    &trans    &trans     &trans     &trans                                                        &kp PLUS      &kp N7     &kp N8  &kp N9  &kp COLON    &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                                                        &kp ASTERISK  &kp N4     &kp N5  &kp N6  &kp MINUS    &trans
+&trans  &trans    &trans    &trans     &trans     &trans  &trans  &trans  &trans    &trans  &trans   &kp COMMA  &kp SLASH     &kp N1     &kp N2  &kp N3  &trans       &trans
+&trans  &trans    &trans    &trans     &trans             &trans  &trans  &trans    &trans  &kp DOT  &kp N0                   &kp EQUAL  &trans  &trans  &trans       &trans
             >;
         };
 
         symbol_layer {
             display-name = "Symbol";
             bindings = <
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &trans    &kp GRAVE    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp SEMI    &kp COMMA    &trans    &trans    &trans    &trans    &trans    &trans
-                &kp EXCLAMATION    &kp LBKT    &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp RBKT    &kp QUESTION    &trans    &trans    &trans    &trans    &trans    &trans
-                &kp HASH    &kp CARET    &kp EQUAL    &kp UNDERSCORE    &kp DOLLAR    &kp ASTRK    &trans    &trans    &trans    &trans    &trans    &trans
-                &kp TILDE    &kp LESS_THAN    &kp PIPE    &kp MINUS    &kp GREATER_THAN    &kp FSLH    &kp BSLH    &kp DOT    &kp ASTERISK    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &kp AT    &kp AMPS    &kp SQT    &kp DOUBLE_QUOTES    &kp PLUS    &kp PERCENT    &kp COLON    &kp AT    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans           &trans         &trans                &trans                 &trans                                                                                                  &trans           &trans       &trans         &trans          &trans
+&trans           &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI          &kp COMMA                                                                     &trans  &trans           &trans       &trans         &trans          &trans
+&kp EXCLAMATION  &kp LBKT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RBKT          &kp QUESTION                                                                  &trans  &kp DELETE       &kp RS(TAB)  &kp INSERT     &kp ESCAPE      &trans
+&kp HASH         &kp CARET      &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR        &kp ASTRK                                                                     &trans  &kp BACKSPACE    &kp TAB      &kp SPACE      &kp ENTER       &trans
+&kp TILDE        &kp LESS_THAN  &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp FSLH      &kp BSLH     &kp DOT    &kp ASTERISK    &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT  &kp RCTRL    &kp RIGHT_ALT  &kp RIGHT_META  &trans
+&kp AT           &kp AMPS       &kp SQT               &kp DOUBLE_QUOTES      &kp PLUS                        &kp PERCENT  &kp COLON  &kp AT          &trans  &trans  &trans          &trans           &trans       &trans         &trans          &trans
             >;
         };
 
@@ -164,13 +165,14 @@
             display-name = "Terminal";
 
             // Bash/Zsh Readline / Emacs-style chords, mapped to left hand.
+
             bindings = <
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &kp LC(A)    &kp LC(E)    &kp LC(U)    &kp LC(K)    &kp LC(W)    &kp LC(R)    &trans    &trans    &trans    &trans    &trans    &trans
-                &kp LC(P)    &kp LC(N)    &kp LA(B)    &kp LA(F)    &kp LC(L)    &kp LC(D)    &trans    &trans    &trans    &trans    &trans    &trans
-                &kp LC(C)    &kp LC(Z)    &kp LC(Y)    &kp LC(T)    &kp LA(D)    &kp LC(B)    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans     &trans     &trans     &trans     &trans                                                                          &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans     &trans     &trans     &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(A)  &kp LC(E)  &kp LC(U)  &kp LC(K)  &kp LC(W)  &kp LC(R)                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(P)  &kp LC(N)  &kp LA(B)  &kp LA(F)  &kp LC(L)  &kp LC(D)                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(C)  &kp LC(Z)  &kp LC(Y)  &kp LC(T)  &kp LA(D)  &kp LC(B)  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans     &trans     &trans                &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -178,13 +180,14 @@
             display-name = "Window Mgmt";
 
             // F13-F24 on left hand only; assign intended actions in each host OS.
+
             bindings = <
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &kp F13    &kp F14    &kp F15    &kp F16    &kp F17    &kp F18    &trans    &trans    &trans    &trans    &trans    &trans
-                &kp F19    &kp F20    &kp F21    &kp F22    &kp F23    &kp F24    &trans    &trans    &trans    &trans    &trans    &trans
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&trans   &trans   &trans   &trans   &trans                                                                      &trans  &trans  &trans  &trans  &trans
+&trans   &trans   &trans   &trans   &trans   &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
+&kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp F19  &kp F20  &kp F21  &kp F22  &kp F23  &kp F24                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans   &trans   &trans   &trans            &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -192,14 +195,16 @@
             display-name = "Magic";
 
             // Factory-style hardware controls, unchanged from uploaded keymap.
+
             bindings = <
-                &bt BT_CLR    &none    &none    &none    &none    &none    &none    &none    &none    &bt BT_CLR_ALL
-                &to 0    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none
-                &none    &rgb_ug RGB_SPI    &rgb_ug RGB_SAI    &rgb_ug RGB_HUI    &rgb_ug RGB_BRI    &rgb_ug RGB_TOG    &none    &none    &none    &none    &none    &none
-                &bootloader    &rgb_ug RGB_SPD    &rgb_ug RGB_SAD    &rgb_ug RGB_HUD    &rgb_ug RGB_BRD    &rgb_ug RGB_EFF    &none    &none    &none    &none    &none    &bootloader
-                &sys_reset    &none    &none    &none    &none    &none    &bt_2    &bt_3    &none    &none    &none    &none    &none    &none    &none    &none    &none    &sys_reset
-                &none    &none    &none    &none    &none    &bt_0    &bt_1    &out OUT_USB    &none    &none    &none    &none    &none    &none    &none    &none
+&bt BT_CLR   &none            &none            &none            &none                                                                                       &none  &none  &none  &none  &bt BT_CLR_ALL
+&to 0        &none            &none            &none            &none            &none                                                               &none  &none  &none  &none  &none  &none
+&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                     &none  &none  &none  &none  &none  &none
+&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                     &none  &none  &none  &none  &none  &bootloader
+&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none           &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB    &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
     };
 };
+
